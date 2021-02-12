@@ -25,7 +25,7 @@ def start(message):
                                                     'Фантастика',
                                                     'Музыка',
                                                     'Мистика',
-                                                    'Триллеры'])
+                                                    'Триллеры']])
                                                     
                                                 
     m = bot.send_message(message.chat.id, 'Фильм какого жанра вы хотели бы посмотреть?', reply_markup=k)
