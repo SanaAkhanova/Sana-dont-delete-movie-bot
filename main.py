@@ -21,10 +21,16 @@ def start(message):
                                                     'Аниме',
                                                     'Документальные',
                                                     'Детектив',
-                                                    'Драмы']])
+                                                    'Драмы',
+                                                    'Фантастика',
+                                                    'Музыка',
+                                                    'Мистика',
+                                                    'Триллеры']))
+                                                    
+                                                
     m = bot.send_message(message.chat.id, 'Фильм какого жанра вы хотели бы посмотреть?', reply_markup=k)
     bot.register_next_step_handler(m, movie)
-    
+    '
     
 @bot.message_handler(content_types=['text'])
 def movie(message):
@@ -43,6 +49,17 @@ def movie(message):
         link = link + 'detektivy/'
     elif message.text == 'Драмы':
         link = link + 'drama/'
+    elif message.text == 'Фантастика':
+        link = link + 'fantastiks/'
+    elif message.text == 'Музыка':
+        link = link + 'music/'
+     elif message.text == 'Мистика':
+        link = link + 'mistika/'
+     elif message.text == 'Триллеры':
+        link = link + 'triller/'       
+            
+          
+        
     parsing(message)
 
 def parsing(message):
