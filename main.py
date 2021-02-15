@@ -53,9 +53,9 @@ def movie(message):
         link = link + 'fantastiks/'
     elif message.text == 'Музыка':
         link = link + 'music/'
-     elif message.text == 'Мистика':
+    elif message.text == 'Мистика':
         link = link + 'mistika/'
-     elif message.text == 'Триллеры':
+    elif message.text == 'Триллеры':
         link = link + 'triller/'       
             
           
