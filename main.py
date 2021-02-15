@@ -30,7 +30,7 @@ def start(message):
                                                 
     m = bot.send_message(message.chat.id, 'Фильм какого жанра вы хотели бы посмотреть?', reply_markup=k)
     bot.register_next_step_handler(m, movie)
-    '
+    
     
 @bot.message_handler(content_types=['text'])
 def movie(message):
